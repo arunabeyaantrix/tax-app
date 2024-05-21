@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import AboutScreen from "../screens/about"
+import AboutScreen from "../../screens/about"
 
 export const metadata: Metadata = {
   title: "About",

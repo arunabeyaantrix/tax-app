@@ -1,7 +1,26 @@
+"use client"
+
+import { Button } from "@/components/Button";
+import { Modal } from "@/components/Modal";
+import { useState } from "react";
 
 const AboutScreen = () => {
+  const [isOpen, setIsOpen] = useState(true)
+
+  const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
+  
   return (
-    <div>
+    <>
     <h1 className="text-red-500">Section 80C </h1> 
     The Government offers you tax breaks on certain types of savings under Section 80C of the Income Tax Act. You can invest up to a maximum of <b>Rs.1,50,000</b> and your income gets reduced by this investment amount. So, you don’t have to pay any tax on this amount at all!
     
@@ -128,7 +147,21 @@ const AboutScreen = () => {
     Professional Tax: Professional tax is deducted from your salary and is deducted from taxable salary before computation of income tax.
     
     Section 16(ia)
-    Standard Deduction is allowed under Section 16(ia) of the Income Tax Act. The standard deduction amount will be Rs.50,000.</div>
+    Standard Deduction is allowed under Section 16(ia) of the Income Tax Act. The standard deduction amount will be Rs.50,000.
+    {isOpen &&
+    <Modal> 
+      <div className="p-6 w-120">
+        <p className="text-xl font-bold mb-3 text-red-500"> Important!!</p>
+      <p className="text-md mb-5">Only old regime has tax exemptions. If you choose new regime you cant apply for deductions</p>
+      {/* @ts-ignore comment  */}
+      <marquee scrollamount="10" className="text-xl text-red-500">ഇനി  ചോദിച്ചാൽ നിന്റെ ചെബുക്കൽ ഞാൻ അടിച്ചു  തിരിക്കും </marquee>
+      <div className="flex justify-end mt-8">
+        <Button text="Close" size="m" color="default" onClick={() => setIsOpen(false)} />
+      </div>
+      </div>
+     
+      </Modal>}
+    </>
   )
 }
 
