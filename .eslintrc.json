@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "plugins": ["simple-import-sort", "unused-imports"],
+  "extends": ["next/core-web-vitals", "next", "prettier"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react/display-name": 0,
+    "unused-imports/no-unused-imports": "error"
+  },
+  "env": {
+    "node": true
+  }
+}
