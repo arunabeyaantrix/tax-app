@@ -150,7 +150,7 @@ const AboutScreen = () => {
     Standard Deduction is allowed under Section 16(ia) of the Income Tax Act. The standard deduction amount will be Rs.50,000.
     {isOpen &&
     <Modal> 
-      <div className="p-6 w-120">
+      <div className="p-6 w-94">
         <p className="text-xl font-bold mb-3 text-red-500"> Important!!</p>
       <p className="text-md mb-5">Only old regime has tax exemptions. If you choose new regime you cant apply for deductions</p>
       {/* @ts-ignore comment  */}
