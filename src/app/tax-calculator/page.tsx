@@ -1,7 +1,8 @@
+import TaxCalculatorScreen from "@/screens/tax-calculator"
 
 const TaxCalculator = () => {
   return (
-    <div>TaxCalculator</div>
+    <TaxCalculatorScreen />
   )
 }
 

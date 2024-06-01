@@ -1,6 +1,6 @@
 "use client"
 
-const Divider = () => <div className="border border-t border-gray-200 mb-10"></div>
+import Divider from "@/components/Divider";
 
 const sectionData = [
   {
@@ -187,43 +187,6 @@ const AboutScreen = () => {
           </ul>
         </>
       ))}
-      
-      <h2>Other Relevant Sections</h2>
-      <ul>
-        <li className=" mb-3">
-          <strong>Section 80CCC:</strong> Deductions for pension fund investments.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 80CCD:</strong> Contributions to NPS with additional benefits.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 80D:</strong> Deductions for health insurance premiums.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 80DDB:</strong> Deductions for medical treatment of specified diseases.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 80E:</strong> Deduction for interest on education loans.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 80G:</strong> Deductions for donations to specified funds.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 80GGA:</strong> Deductions for donations to approved organizations.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 24:</strong> Deduction for interest on home loans.
-        </li>
-        <li className=" mb-3">
-          <strong>Section 80EE:</strong> Additional deduction for first-time homebuyers.
-        </li>
-        <li>
-          <strong>Section 10:</strong> House Rent Allowance (HRA) deductions.
-        </li>
-        <li>
-          <strong>Section 16:</strong> Standard deduction from taxable salary.
-        </li>
-      </ul>
     </div>
   );
 };
