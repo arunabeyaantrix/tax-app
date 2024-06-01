@@ -1,3 +1,4 @@
+
 import '@/styles/globals.css';
 import type { Metadata } from "next";
 
@@ -14,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body >
+        <div className='desktop:px-35 desktop:py-20'>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
