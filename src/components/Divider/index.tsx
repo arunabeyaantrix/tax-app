@@ -1,4 +1,3 @@
-
-const index = () => <div className="border border-t border-gray-200 mb-10"></div>
-
-export default index
+export const Divider: React.FC = () => (
+  <div className="border border-t border-gray-200"></div>
+)
